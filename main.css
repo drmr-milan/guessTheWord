@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: #d3d3d3;
+    font-family: 'Playfair Display SC', serif;
+}
+
+body {
+    background-color: #403a3e;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 700px;
+    text-align: center; 
+    padding: 0 20px;   
+}
+
+.top {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.category {
+    border: 2px solid #d3d3d3;
+    padding: 5px 10px 7px 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 16px;
+}
+
+.category:hover,
+.category:active {
+    background-color: #d3d3d3;
+    color: #403a3e;
+    font-weight: bold;
+}
+
+.btn {
+    border: 2px solid #d3d3d3;
+    padding: 5px 10px 7px 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    color: inherit;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #d3d3d3;
+    color: #403a3e;
+    font-weight: bold;
+}
+
+.activeCategory {
+    background-color: #d3d3d3;
+    color: #403a3e;
+    font-weight: bold;
+}
+
+.char {
+    width: 25px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    color: inherit;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin: 0 5px;
+    transition: all .3s;
+    animation: fadeIn 1s forwards;
+    font-size: 1.5em;
+    margin: 40px 5px;
+}
+
+.bottom {
+    margin-bottom: 40px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 500px) {
+    .category {
+        display: inline-block;
+    }
+}
